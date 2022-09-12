@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="main.css" href="main.css">
+    <link rel="stylesheet" href="main.css">
     <script defer src="script.js"></script>
 
     <title>EM 2020 QUIZ</title>
@@ -10,123 +10,32 @@
 </head>
 <body>
 
-<section>
+
+<div class="hanscontainer">
     <header id="header">
         <h1>EM 2020 QUIZ</h1>
-        <img src="DAMSINHO.jpeg" alt="Mikkel Damsgaard" width="500" height="300">
-        <h2>Hvor godt husker du EM 2020?</h2>
-        <h3>Tag quizzen her og find ud af det</h3>
+        <img src="DAMSINHO.jpeg" alt="Mikkel Damsgaard" width="485" height="295">
+        <h2>Hvor godt husker du EM 2020? Tag quizzen her og test din viden</h2>
     </header>
-</section>
+</div>
+
+
 
 <div class="container">
     <div id="question-container" class="hide">
-        <div id="question">question</div>
+        <div id="question">Question</div>
         <div id="answer-buttons" class="btn-grid">
-            <button class="btn"> answer 1</button>
-            <button class="btn"> answer 2</button>
-            <button class="btn"> answer 3</button>
-            <button class="btn"> answer 4</button>
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
         </div>
     </div>
     <div class="controls">
-        <button id="start-btn" class="start-btn btn">start</button>
-        <button id="next-btn" class="next-btn btn hide">next</button>
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
     </div>
 </div>
-
-<section id="spørgsmål">
-
-    Q1. Hvem vandt EM 2020?<br>
-    <input type="radio" name="q1" >Frankrig<br>
-    <input type="radio" name="q1" >Danmark<br>
-    <input type="radio" name="q1" id="correct1">Italien<br>
-    <input type="radio" name="q1" >England<br>
-    <br>
-    Q2. Hvem var topscorer under EM 2020?<br>
-    <input type="radio" name="q2" >Mohammed Daramy<br>
-    <input type="radio" name="q2" >Karim Benzema<br>
-    <input type="radio" name="q2" id="correct2">Cristiano Ronaldo<br>
-    <input type="radio" name="q2" >Christian Eriksen<br>
-    <br>
-    Q3. Hvad blev Danmark-Finland?<br>
-    <input type="radio" name="q3" >4-0<br>
-    <input type="radio" name="q3" >1-2<br>
-    <input type="radio" name="q3" >1-4<br>
-    <input type="radio" name="q3" id="correct3">0-1<br>
-    <br>
-    Q4. Hvem var Dansk topscorer under EM 2020?<br>
-    <input type="radio" name="q4" id="correct4">Kasper Dolberg<br>
-    <input type="radio" name="q4" >Yussuf Poulsen<br>
-    <input type="radio" name="q4" >Mikkel Damsgaard<br>
-    <input type="radio" name="q4" >Joakim Mæhle<br>
-    <br>
-    Q5. Hvor mange mål scorede Danmark under EM 2020?<br>
-    <input type="radio" name="q5" >10<br>
-    <input type="radio" name="q5" >11<br>
-    <input type="radio" name="q5" >12<br>
-    <input type="radio" name="q5" id="correct5">13<br>
-    <br>
-    Q6. Hvad hedder Danmarks landsholdstræner?<br>
-    <input type="radio" name="q6" >Peter Schmeichel<br>
-    <input type="radio" name="q6" id="correct6">Kasper Hjulmand<br>
-    <input type="radio" name="q6" >Nikolaj Jakobsen<br>
-    <input type="radio" name="q6" >Micheal Laudrup<br>
-    <br>
-    Q7. Hvorfor hed det EM 2020, når det blev spillet i 2021?<br>
-    <input type="radio" name="q7" >Pest<br>
-    <input type="radio" name="q7" id="correct7">Covid-19<br>
-    <input type="radio" name="q7" >Bombe trusler fra Rusland<br>
-    <input type="radio" name="q7" >Copyright problemer med navnet "EM 2021"<br>
-    <br>
-    Q8. Hvor blev finalen spillet i EM 2020?<br>
-    <input type="radio" name="q8" id="correct8">Wembley Stadium<br>
-    <input type="radio" name="q8" >Telia Parken<br>
-    <input type="radio" name="q8" >Stadio Olympico<br>
-    <input type="radio" name="q8" >Stade de France<br>
-
-    <input type="submit" name="submit" value="submitQuiz" onclick="
-    result()">
-    <script type="text/javascript">
-        function result() {
-            // body...
-            var score=0;
-            if (document.getElementById('correct1').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct2').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct3').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct4').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct5').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct6').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct7').checked)
-            {
-                score++;
-            }
-            if (document.getElementById('correct8').checked)
-            {
-                score++;
-            }
-            document.write("your score is:" +score);
-        }
-
-</section>
 
 </body>
 </html>
