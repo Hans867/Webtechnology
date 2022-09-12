@@ -16,7 +16,7 @@ nextButton.addEventListener('click', () => {
 function startGame() {
     startButton.classList.add('hide')
     header.classList.add('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - .16)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
@@ -161,7 +161,7 @@ const questions = [
         ]
     },
     {
-        question: 'Hvow mange kampe vandt Danmark ved EM 2020',
+        question: 'Hvow mange kampe spillede Danmark ved EM 2020',
         answers: [
             { text: '6', correct: true },
             { text: '7', correct: false },
